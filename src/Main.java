@@ -34,7 +34,9 @@ public class Main {//Capitulo 9 pagina 409 del libro en español
                     System.out.println("Va a ingresar vehiculos de tipo Turismo");
                 }break;
                 case 4:{
+
                     System.out.println("Saliendo......");
+                    pausa = true;
                 }break;
             }
         }
