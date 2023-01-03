@@ -24,19 +24,32 @@ public class Main {//Capitulo 9 pagina 409 del libro en español
         while(!pausa){
             opPrincipal = menuPrincipal();
             switch(opPrincipal){
-
+                case 1:{
+                    System.out.println("Va a ingresar vehiculos de cualquier tipo");
+                }break;
+                case 2:{
+                    System.out.println("Va a ingresar vehiculos de tipo Autobus");
+                }break;
+                case 3:{
+                    System.out.println("Va a ingresar vehiculos de tipo Turismo");
+                }break;
+                case 4:{
+                    System.out.println("Saliendo......");
+                }break;
             }
         }
     }
 
     public static int menuPrincipal(){
+        int opcion = 0;
         System.out.println("\t\t\t****** Bienvenido al Programa ******");
         System.out.println("1. Ingresar Vehiculos");
         System.out.println("2. Ingresar Vehiculo de Tipo Autobus");
         System.out.println("3. Ingresar Vehiculo de Tipo Turismo");
         System.out.println("4. Salir");
         System.out.print("Opcion?: ");
-        int opcion = sc.nextInt();
+        opcion = sc.nextInt();
+
         while ((opcion < 1) || (opcion > 4)){
             System.out.print("Ingrese una opcion entre el 1-4: ");
             opcion = sc.nextInt();
